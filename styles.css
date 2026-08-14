@@ -117,6 +117,67 @@ button:focus-visible {
   background: var(--card);
 }
 
+.language-switcher {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.language-switcher summary {
+  min-height: 38px;
+  padding: 8px 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--card);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 750;
+  list-style: none;
+  user-select: none;
+}
+
+.language-switcher summary::-webkit-details-marker {
+  display: none;
+}
+
+.language-switcher[open] summary,
+.language-switcher summary:hover {
+  color: var(--ink);
+  border-color: rgba(14, 14, 15, 0.2);
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 190px;
+  padding: 8px;
+  display: grid;
+  gap: 2px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: 0 18px 50px rgba(40, 29, 20, 0.16);
+}
+
+.language-menu a {
+  padding: 9px 11px;
+  border-radius: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.language-menu a:hover,
+.language-menu a[aria-current="page"] {
+  color: var(--ink);
+  background: var(--surface);
+}
+
 .hero {
   min-height: 760px;
   padding: 92px 0 76px;
@@ -904,6 +965,7 @@ h1 {
 
   .nav {
     min-height: 66px;
+    gap: 8px;
   }
 
   .nav-links a {
@@ -913,6 +975,17 @@ h1 {
 
   .nav-links a:first-child {
     display: none;
+  }
+
+  .language-switcher summary {
+    width: 40px;
+    padding: 8px;
+    justify-content: center;
+    font-size: 0;
+  }
+
+  .language-switcher summary span {
+    font-size: 18px;
   }
 
   .hero {
