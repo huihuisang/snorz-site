@@ -1,0 +1,58 @@
+name: Snorz support request
+description: Ask for help with Snorz without sharing personal or sensitive information.
+title: "Support: "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using Snorz. This request will be public. Do not attach recordings, health information, purchase receipts, Apple Account details, or other personal information.
+  - type: input
+    id: app-version
+    attributes:
+      label: Snorz version
+      description: Find this in Snorz Settings or the App Store.
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version
+      placeholder: "iOS 26.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Recording
+        - Night report or Snore Load
+        - Audio clip playback
+        - iCloud Sync
+        - Discover
+        - Snorz Pro or purchases
+        - Data deletion
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the expected result and what happened instead. Do not include personal or sensitive data.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that reliably show the issue, if known.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included recordings, personal information, health information, receipts, or Apple Account details.
+          required: true

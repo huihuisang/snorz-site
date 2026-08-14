@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huihuisang.github.io/snorz-site/sitemap.xml
