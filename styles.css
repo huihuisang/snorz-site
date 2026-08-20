@@ -974,7 +974,7 @@ h1 {
 @media (max-width: 768px) {
   .nav { justify-content: flex-start; }
   .brand { order: 1; }
-  .by-ajigu { order: 2; margin-right: 0; }
+  .by-ajigu { order: 2; margin-right: 0; font-size: 0; gap: 0; }
   .language-switcher { order: 3; }
   .nav-links { order: 4; margin-left: auto; }
 }
