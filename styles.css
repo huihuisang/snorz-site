@@ -76,6 +76,20 @@ button:focus-visible {
   gap: 28px;
 }
 
+
+.by-ajigu {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted, #6f6a62);
+  white-space: nowrap;
+}
+.by-ajigu img { width: 20px; height: 20px; border-radius: 50%; }
+.by-ajigu:hover { color: var(--ink, #2d2a26); }
+
 .brand {
   display: inline-flex;
   align-items: center;
