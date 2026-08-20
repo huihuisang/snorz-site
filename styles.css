@@ -86,6 +86,8 @@ button:focus-visible {
   font-weight: 600;
   color: var(--muted, #6f6a62);
   white-space: nowrap;
+  margin-left: -14px;
+  margin-right: auto;
 }
 .by-ajigu img { width: 20px; height: 20px; border-radius: 50%; }
 .by-ajigu:hover { color: var(--ink, #2d2a26); }
