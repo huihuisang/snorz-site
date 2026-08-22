@@ -1003,14 +1003,26 @@ h1 {
   }
 
   .language-switcher summary {
-    width: 40px;
-    padding: 8px;
-    justify-content: center;
-    font-size: 0;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    white-space: nowrap;
   }
 
   .language-switcher summary span {
-    font-size: 18px;
+    font-size: 13px;
+  }
+
+  /* Language menu opens as a sheet pinned inside the viewport */
+  .language-menu {
+    position: fixed;
+    top: 76px;
+    left: 12px;
+    right: 12px;
+    min-width: 0;
+    z-index: 60;
   }
 
   .hero {
