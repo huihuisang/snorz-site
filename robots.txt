@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://snorz.ajigu.com/sitemap.xml
+Sitemap: https://gosleep.ajigu.com/sitemap.xml
