@@ -1131,3 +1131,14 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* FAQ */
+.faq-list { display: flex; flex-direction: column; gap: 12px; }
+.faq-list details {
+  background: var(--card, #fffdf9);
+  border: 1px solid var(--border, #e7e0d6);
+  border-radius: 14px;
+  padding: 18px 22px;
+}
+.faq-list summary { cursor: pointer; font-weight: 600; }
+.faq-list p { margin: 12px 0 0; color: var(--muted, #6f6a62); }
