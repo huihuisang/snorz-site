@@ -288,4 +288,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://gosleep.ajigu.com/fr/privacy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gosleep.ajigu.com/privacy/" />
   </url>
+  <url><loc>https://gosleep.ajigu.com/guides/night-sounds/</loc></url>
+  <url><loc>https://gosleep.ajigu.com/guides/night-sounds/zh-hans/</loc></url>
+  <url><loc>https://gosleep.ajigu.com/guides/night-sounds/ja/</loc></url>
 </urlset>
