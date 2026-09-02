@@ -1142,3 +1142,6 @@ h1 {
 }
 .faq-list summary { cursor: pointer; font-weight: 600; }
 .faq-list p { margin: 12px 0 0; color: var(--muted, #6f6a62); }
+
+.guide-link { color: var(--accent-2, #7aa5a0); font-weight: 600; }
+.guide-link::before { content: "✦ "; }
