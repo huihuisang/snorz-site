@@ -59,8 +59,24 @@
     link.addEventListener("click", () => savePreference(link.dataset.language));
   });
 
+
   const current = document.documentElement.dataset.locale || "en-US";
-  if (current !== "en-US") {
+
+  // Explicit language hand-off from other ajigu sites via ?lang=en|zh|ja...
+  const paramAliases = { en: "en-US", "zh-hans": "zh-Hans", "zh-hant": "zh-Hant", ja: "ja", ko: "ko", de: "de", fr: "fr" };
+  const paramLang = new URLSearchParams(location.search).get("lang");
+  if (paramLang) {
+    const mapped = paramLang.toLowerCase().startsWith("zh") && /hant|tw|hk|mo/.test(paramLang.toLowerCase())
+      ? "zh-Hant"
+      : paramAliases[paramLang.toLowerCase()] || null;
+    if (mapped) {
+      savePreference(mapped);
+      if (current === "en-US" && mapped !== "en-US" && routes[mapped] !== undefined) {
+        location.replace(localizedPath(mapped));
+      }
+      return;
+    }
+  }  if (current !== "en-US") {
     if (!readPreference()) savePreference(current);
     return;
   }
