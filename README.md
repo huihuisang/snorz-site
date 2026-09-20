@@ -1,12 +1,12 @@
-# Snorz Website
+# Go Sleep Website
 
-The public product, support, and privacy website for Snorz.
+The public product, support, and privacy website for Go Sleep.
 
 ## Pages
 
-- Product: `https://snorz.ajigu.com/`
-- Support: `https://snorz.ajigu.com/support/`
-- Privacy: `https://snorz.ajigu.com/privacy/`
+- Product: `https://gosleep.ajigu.com/`
+- Support: `https://gosleep.ajigu.com/support/`
+- Privacy: `https://gosleep.ajigu.com/privacy/`
 
 The site is a dependency-free static build deployed from the `main` branch through GitHub Pages.
 
